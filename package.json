@@ -1,0 +1,45 @@
+{
+  "name": "freeport",
+  "version": "1.0.0",
+  "description": "⚡ Instantly kill whatever process is blocking your port. Cross-platform, interactive & zero-config.",
+  "type": "module",
+  "main": "./dist/cli.js",
+  "bin": {
+    "freeport": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "port",
+    "kill-port",
+    "process",
+    "developer-tools",
+    "cli",
+    "freeport",
+    "lsof",
+    "netstat",
+    "cross-platform"
+  ],
+  "author": "Pulkit Bisht",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^9.0.0",
+    "commander": "^15.0.0",
+    "ora": "^9.4.1",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
